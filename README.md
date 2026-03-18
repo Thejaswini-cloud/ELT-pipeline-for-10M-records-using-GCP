@@ -12,12 +12,18 @@ The pipeline:
 4.Creates reporting views for analytical use
 
 **#TECH STACK**
+
 1.Apache Airflow
+
 2.Python
+
 3.Google Cloud Storage(GCS)
+
 4.BigQuery
 
 **#Architecture**
+
+
         +---------------------+
         |  GCS (CSV File)     |
         | global_health_data  |
@@ -38,7 +44,7 @@ The pipeline:
         -------------------------
         |         |            |
         ▼         ▼            ▼
- Country Tables (Transform Layer)
+       Country Tables (Transform Layer)
         |
         ▼
- Reporting Views (Analytics Layer)
+      Reporting Views (Analytics Layer)
