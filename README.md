@@ -18,7 +18,6 @@ The pipeline:
 4.BigQuery
 
 **#Architecture**
-
         +---------------------+
         |  GCS (CSV File)     |
         | global_health_data  |
