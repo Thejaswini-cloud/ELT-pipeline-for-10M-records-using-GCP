@@ -10,3 +10,36 @@ The pipeline:
 3.Transforms data into country-specific tables
 
 4.Creates reporting views for analytical use
+
+**#TECH STACK**
+1.Apache Airflow
+2.Python
+3.Google Cloud Storage(GCS)
+4.BigQuery
+
+**#Architecture**
+
+        +---------------------+
+        |  GCS (CSV File)     |
+        | global_health_data  |
+        +----------+----------+
+                   |
+                   ▼
+        +---------------------+
+        | Airflow DAG         |
+        | (Orchestration)     |
+        +----------+----------+
+                   |
+                   ▼
+        +---------------------+
+        | BigQuery (Raw Layer)|
+        | global_data         |
+        +----------+----------+
+                   |
+        -------------------------
+        |         |            |
+        ▼         ▼            ▼
+ Country Tables (Transform Layer)
+        |
+        ▼
+ Reporting Views (Analytics Layer)
