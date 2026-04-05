@@ -52,7 +52,7 @@ with DAG(
     )
 
     # Task to load CSV from GCS to BigQuery
-    load_csv_to_bigquery = GCSToBigQueryOperator(
+    load_csv_to_bq = GCSToBigQueryOperator(
         task_id='load_csv_to_bq',
         bucket='elt-bucket',  # Replace with your bucket name
         source_objects=['global_health_data.csv'],  # Path to your file in the bucket
