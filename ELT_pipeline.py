@@ -27,7 +27,7 @@ dataset_id = '.health_data_global'
 transform_dataset_id ='transform_data_by_country'
 reporting_dataset_id = 'reporting_data_by_country'
 source_table = f'{project_id}.{dataset_id}.global_data'  # Main table loaded from CSV
-countries = ['USA', 'India', 'Germany', 'Japan', 'France', 'Canada', 'Italy','Mexico']  
+countries = ['USA', 'India', 'Germany', 'Japan', 'France', 'Canada', 'Italy']  
 
 
 # DAG definition
